@@ -7,8 +7,9 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 8080;
 var router = express.Router();
+
 router.get('/user', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });
+    res.json({id: 0, user_name:"test", password:"test2"});
 });
 
 app.use('/api', router);
